@@ -1,0 +1,100 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/trash.css");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+* {
+  margin: 0px !important;
+  box-sizing: border-box;
+}
+
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background: rgb(206, 179, 5);
+  border: 2px solid black;
+  color: black;
+  box-shadow: 0px 20px 30px rgb(4, 107, 150);
+  border-radius: 10px;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(90, 198, 224), #57a5e4);
+}
+
+.general {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: 0px 20px 30px rgb(4, 107, 150);
+}
+
+.header > *:nth-child(1) {
+  flex: 5;
+  flex-grow: 5;
+  word-break: break-word;
+  font-family: "Marcellus", serif;
+}
+
+.header > *:nth-child(2) {
+  flex: 1;
+  align-self: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 0px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px rgb(4, 107, 150);
+}
+
+ul > li {
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 0.054fr 1fr repeat(2, 0.095fr);
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid rgb(206, 201, 201);
+}
+
+ul > li > *:nth-child(2) {
+  text-align: center;
+  padding: 8px;
+  font-size: 30px;
+  font-family: "Marcellus", serif;
+  word-break: break-word;
+  font-size: 1em;
+}
+
+ul > li > *:nth-child(3) {
+  align-self: center;
+  height: 3em;
+}
+
+ul > li > *:nth-child(4) {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+ul > li > *:nth-child(4) > i {
+  margin: 10px !important;
+}
