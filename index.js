@@ -38,7 +38,7 @@ function createBtnMod() {
       e.target.parentNode.childNodes[1].setAttribute("contenteditable", "true");
       e.target.parentNode.childNodes[1].setAttribute(
         "placeholder",
-        "Agregar una tarea"
+        "Editar tarea"
       );
       e.target.parentNode.childNodes[1].textContent = value;
       updateTasks(value, idClicked);
