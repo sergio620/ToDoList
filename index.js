@@ -18,7 +18,7 @@ btnAdd.addEventListener("click", (event) => {
     li.appendChild(createBtnDel());
     li.setAttribute("key", count);
     saveTask(li);
-    event.target.parentNode.childNodes[1].textContent = "";
+    event.target.parentNode.childNodes[1].textContent = ""; /*childNodes devuelve childNodes (nodos de elementos, nodos de texto y nodos de comentarios). children retorna child elements (no devuelve texto ni nodos de comentarios).*/
   }
 });
 
